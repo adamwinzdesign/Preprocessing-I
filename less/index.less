@@ -54,9 +54,19 @@ table {
 @heading-font: 'Righteous', sans-serif;
 @body-font: 'Lato', sans-serif;
 
+.headingText(){
+	font-size: 4rem;
+	padding: 2rem;
+}
+
+.infoText(){
+	font-size: 2.75rem;
+}
+
 .center(){
   display: flex;
-  justify-content: center;
+	justify-content: center;
+	align-items: center;
 }
 
 .right(){
@@ -96,11 +106,18 @@ nav {
 a {
 	color: #fff;
 	font-family: @heading-font;
-	font-size: 2rem;
-	padding: 2rem;
+	.headingText();
 	text-decoration: none;
 	&:hover{
 		color:#000;
 		background-color: #fff;
 	}
+}
+
+h1 {
+	.headingText();
+}
+
+p {
+	.infoText();
 }
