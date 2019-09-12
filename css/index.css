@@ -155,12 +155,13 @@ nav {
   display: flex;
   justify-content: flex-end;
   background: #000;
+  width: 100%;
 }
 a {
   color: #fff;
-  font-family: 'Righteous', sans-serif;
   font-size: 4rem;
   padding: 2rem;
+  font-family: 'Righteous', sans-serif;
   text-decoration: none;
 }
 a:hover {
@@ -170,33 +171,37 @@ a:hover {
 h1 {
   font-size: 4rem;
   padding: 2rem;
+  font-family: 'Righteous', sans-serif;
 }
-p {
+p,
+ul,
+h2 {
   font-size: 2.75rem;
   padding: 2rem;
+  font-family: 'Lato', sans-serif;
 }
-#about {
+p li,
+ul li,
+h2 li {
+  padding: 0.5rem;
+}
+#about,
+#skills,
+#experience,
+#contact {
   width: 90%;
   margin: 2rem auto;
-  border: 1px solid green;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-}
-img {
-  width: 100%;
+  border: 3px solid #FF0202;
 }
 .col {
   display: flex;
   flex-direction: column;
   width: 50%;
 }
-#about {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-div {
-  display: inline-flex;
+.col img {
+  width: 100%;
 }
