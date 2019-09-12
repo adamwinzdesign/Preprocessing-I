@@ -215,7 +215,7 @@ h2 li {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  border: 3px solid #FF0202;
+  border: 6px solid #FF0202;
 }
 @media (max-width: 500px) {
   #about,
