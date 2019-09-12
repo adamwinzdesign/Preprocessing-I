@@ -48,12 +48,124 @@ table {
 	border-spacing: 0;
 }
 
+// fonts
+@import url('https://fonts.googleapis.com/css?family=Lato|Righteous&display=swap');
+
+@heading-font: 'Righteous', sans-serif;
+@body-font: 'Lato', sans-serif;
+
+.headingText(){
+	font-size: 4rem;
+	padding: 2rem;
+	font-family: @heading-font;
+}
+
+.infoText(){
+	font-size: 2.75rem;
+	padding: 2rem;
+	font-family: @body-font;
+}
+
+.mobileFont(){
+	font-size: 2rem;
+	padding: 1rem;
+}
+
+.center(){
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.right(){
+	display: flex;
+	justify-content: flex-end;
+}
+
+.column(){
+	display: flex;
+	flex-direction: column;
+}
+
+.border(){
+  border: 6px solid #FF0202;
+}
+
+.backgroundMain(){
+	background: #000;
+}
+
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	font-size: 62.5%;
 }
 
+nav {
+	.right();
+	.backgroundMain();
+	width:100%;
+	a {
+		color: #fff;
+		.headingText();
+		text-decoration: none;
+		&:hover{
+			color:#000;
+			background-color: #fff;
+		}
+
+		@media(max-width: 500px) {
+			.mobileFont();
+		}
+	}
+}
+
+h1 {
+	.headingText();
+
+	@media(max-width: 500px) {
+		.mobileFont();
+	}
+}
+
+p, ul, h2 {
+	.infoText();
+	li {
+		padding: .5rem;
+	}
+
+	@media(max-width: 500px) {
+		.mobileFont();
+	}
+}
+
+#about, #skills, #experience, #contact {
+	width: 90%;
+	margin: 2rem auto;
+	.center();
+	.border();
+
+	@media(max-width: 500px) {
+		flex-direction: column;
+	}
+}
+
+.col {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	img {
+		width: 100%;
+	}
+
+	@media(max-width: 500px){
+		width: 100%;
+	}
+}
