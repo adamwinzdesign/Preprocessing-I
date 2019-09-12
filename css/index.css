@@ -126,11 +126,44 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v16/S6uyw4BMUTPHjx4wWw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Righteous';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Righteous'), local('Righteous-Regular'), url(https://fonts.gstatic.com/s/righteous/v8/1cXxaUPXBpj2rGoU7C9WiHGA.ttf) format('truetype');
+}
 /* Set every element's box-sizing to border-box */
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 html,
 body {
   height: 100%;
+  font-size: 62.5%;
+}
+nav {
+  display: flex;
+  justify-content: flex-end;
+  background: #000;
+}
+a {
+  color: #fff;
+  font-family: 'Righteous', sans-serif;
+  font-size: 2rem;
+  padding: 2rem;
+  text-decoration: none;
+}
+a:hover {
+  color: #000;
+  background-color: #fff;
 }
