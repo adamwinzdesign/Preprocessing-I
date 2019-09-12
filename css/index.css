@@ -157,21 +157,33 @@ nav {
   background: #000;
   width: 100%;
 }
-a {
+nav a {
   color: #fff;
   font-size: 4rem;
   padding: 2rem;
   font-family: 'Righteous', sans-serif;
   text-decoration: none;
 }
-a:hover {
+nav a:hover {
   color: #000;
   background-color: #fff;
+}
+@media (max-width: 500px) {
+  nav a {
+    font-size: 2rem;
+    padding: 1rem;
+  }
 }
 h1 {
   font-size: 4rem;
   padding: 2rem;
   font-family: 'Righteous', sans-serif;
+}
+@media (max-width: 500px) {
+  h1 {
+    font-size: 2rem;
+    padding: 1rem;
+  }
 }
 p,
 ul,
@@ -185,6 +197,14 @@ ul li,
 h2 li {
   padding: 0.5rem;
 }
+@media (max-width: 500px) {
+  p,
+  ul,
+  h2 {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+}
 #about,
 #skills,
 #experience,
@@ -197,6 +217,14 @@ h2 li {
   flex-wrap: wrap;
   border: 3px solid #FF0202;
 }
+@media (max-width: 500px) {
+  #about,
+  #skills,
+  #experience,
+  #contact {
+    flex-direction: column;
+  }
+}
 .col {
   display: flex;
   flex-direction: column;
@@ -204,4 +232,9 @@ h2 li {
 }
 .col img {
   width: 100%;
+}
+@media (max-width: 500px) {
+  .col {
+    width: 100%;
+  }
 }
